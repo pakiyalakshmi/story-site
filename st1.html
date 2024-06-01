@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY STORIES</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", "sans-serif"}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://media.istockphoto.com/id/1022236966/photo/conceptual-background-on-history-education-literature-topics.jpg?s=612x612&w=0&k=20&c=YMti30QgV34p8S60u9s0I4NY4FmEqL-J9LE2uJcJTQE=");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+        a:hover {
+            color: rgb(42, 84, 75); /* Optional: A darker shade for hover effect */
+        }
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#rating" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> RATING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#rating" onclick="w3_close()" class="w3-bar-item w3-button">RATING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home"> 
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Read Something That Matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop Wasting Valuable Time With Technologies That Just Isn't You.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Read More And Start Today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THIS PAGE</h3>
+  <p class="w3-center w3-large">Key features of THIS PAGE </p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>We will respond to you at any time.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>To deliver more STORIES.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">IMAGINE</p>
+      <p>I'll make you imagine the story world.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Will help you to find your queries</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>About This Creative Writing.</h3>
+      <p>I'll take you to the world of horror and thriller <br></p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"></i> View Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://imageservice.sky.com/contentid/A5EK5E17HwqzsG5iDDffU/LAND_16_9?language=eng&territory=GB&proposition=NOWTV&version=0406e7bc-bb4c-38c7-a2a5-1d4d480765eb" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">MYSELF</h3>
+  <p class="w3-center w3-large">About Me</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-center" class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team2.jpg" alt="Abi" style="width:100%">
+        <div class="w3-center" class="w3-container">
+          <h3>ABINAYA</h3>
+          <p class="w3-center" class="w3-opacity">CREATOR</p>
+          <p> This creation is hust my hobby and not a full time work. If you have any queries just DM me. </p>
+          <p><button class="w3-center" class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact<a href="ot7abinaya@gmail.com"> </button></a>
+          </a></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">STORIES OF SUCCESS</h3>
+  <p class="w3-center w3-large">What I've done </p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <p><a href="http://127.0.0.1:3000/d:/GIRL.html">GIRL IN THE MIRROR</a></p>
+    </div>
+    <div class="w3-col l3 m6">
+      <p><a href="http://127.0.0.1:3000/d:/1SPOON2.html">1 SPOON AND 2 EYE BALLS</a></P>
+    </div>
+    <div class="w3-col l3 m6">
+      <P><a href="http://127.0.0.1:3000/d:/murdurer.html">SIR.... IM THE MURDURER</P></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <P><a href="http://127.0.0.1:3000/d:/STAR.html">YOU ARE MY NEXT INTERNET STAR</P></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <P><a href="http://127.0.0.1:3000/d:/turn.html">I'M BEHIND YOU..... TURN AROUND</P></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <P><a href="http://127.0.0.1:3000/d:/desert.html">ENDLESS LOOP IN THE DESERT.</P></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <P><a href="http://127.0.0.1:3000/d:/piano.html">HER OLD PIANO.</P></a>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  max-width: 800px; /* Max width */
+  padding: 20px;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #202020;}
+.bar-4 {width: 30%; height: 18px; background-color: #404040;}
+.bar-3 {width: 10%; height: 18px; background-color: #696969;}
+.bar-2 {width: 4%; height: 18px; background-color: #808080;}
+.bar-1 {width: 15%; height: 18px; background-color: #A9A9A9;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+    </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Dindigul, Tamil Nadu, India</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: ot7abinaya@gmail.com</p>
+    <br>
+    <form action="https://formsubmit.co/ot7abinaya@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Mail Wooooo!">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" required></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" required></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject" required></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" required></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"><p><a href="https://www.snapchat.com/add/abi_n509?share_id=WR37gsRZLdk&locale=en-US" title="snapchat">snapchat</a></i></p>
+    <i class="fa fa-pinterest-p w3-hover-opacity"><p><a href="https://pin.it/54Ohvxr19" title="pinterest">Pinterest</a></i></p></i>
+    <i class="fa fa-linkedin w3-hover-opacity"><p><a href="https://www.linkedin.com/in/pakiyalakshmi-s-9647211bb/" title="linkedin">linkedin</a></i></p></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
